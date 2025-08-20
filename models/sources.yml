@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: raw         # schema name in your warehouse
+    
+    tables:
+      - name: emp    # table or file name in Snowflake
+        description: "emp data from CRM"
+      - name: host_list
+        description: "host list data from Airbnb"
+      - name: host
+        identifier: raw_hosts
+      - name: listing
+        identifier: raw_listings
+      - name: raw_reviews
+        
+        
