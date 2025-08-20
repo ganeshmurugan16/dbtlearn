@@ -2,7 +2,6 @@ version: 2
 
 sources:
   - name: raw         # schema name in your warehouse
-    
     tables:
       - name: emp    # table or file name in Snowflake
         description: "emp data from CRM"
@@ -12,6 +11,6 @@ sources:
         identifier: raw_hosts
       - name: listing
         identifier: raw_listings
-      - name: raw_reviews
-        
+        name: raw_reviews
+        identifier: raw_reviews
         
