@@ -14,4 +14,4 @@ select
             ,IS_SUPERHOST
             ,CREATED_AT
             ,UPDATED_AT
- from raw_hosts
+ from raw_hosts where id is not null
