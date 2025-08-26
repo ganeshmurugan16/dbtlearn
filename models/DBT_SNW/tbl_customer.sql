@@ -2,7 +2,9 @@
             unique_key='customer_id',
             incremental_strategy='merge',
             transient=False,
-            database='ECOMMERCE')}}
+            database='ECOMMERCE',
+            post_hook="delete from ECOMMERCE.raw.tbl_cust_raw"
+            )}}
 
 with dbt_staging_customer as 
 (select  
